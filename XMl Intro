@@ -1,6 +1,14 @@
+-the XML does not DO anything. XML is just information wrapped in tags.
+-XML was designed to carry data - with focus on what data is
+-XML tags are not predefined like HTML tags are
+-XML simplifies data sharing- Exchanging data between  upgraded systems is a time-consuming task. Large amounts of data must be converted, and incompatible data is often lost. but XML data supported in all upgraded platform as well, either its is browser or any systm.
+-XML simplifies data transport- XML stores data in plain text format. This provides a independent way of storing, transporting, and sharing data.
+-XML simplifies platform changes - XML also makes it easier to expand or upgrade to new operating systems, new applications, or new browsers, without losing data.
+-XML simplifies data availability - data can be available to all kinds of "reading machines" like people, computers, voice machines, news feeds, etc.
+
 What is XML?
      1. XML is W3c Recommendation in 1998.
-     2.XMl - Extensible Markup Language, X-extensible means you can make your own tags
+     2. XMl - Extensible Markup Language, X-extensible means you can make your own tags
 Xml is foundation of several popular information format
      1.Microsoft office- uses word, excel and powerpoint files
      2.SVG - Scalable Vector Garphics
