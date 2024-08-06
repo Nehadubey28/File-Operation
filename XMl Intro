@@ -13,3 +13,17 @@ XML Technologies
      3.Xquery; like XPath more advanced querying language than XPath
      4.XPointer/XLink: links between and within XML documents
 Note: Xquery, XPointer/XLink are more advance and complex
+
+Valid XML Documnet
+When the XML parse processes the Document correctly and the rule that you defined, then the document is valid.
+Two ways we can valid the XML
+1.DTD(Document type definitions)
+ - simple to use, but not very powerful
+ - written using a syntax that is different from XML
+2.XML schemea
+ - Much more powerful and flexible than DTDs
+ - Written using XML Syntax 
+
+XMl Namespaces
+-prevent Tags from different languages from conflicting
+
