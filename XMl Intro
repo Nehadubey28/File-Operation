@@ -1,0 +1,15 @@
+What is XML?
+     1. XML is W3c Recommendation in 1998.
+     2.XMl - Extensible Markup Language, X-extensible means you can make your own tags
+Xml is foundation of several popular information format
+     1.Microsoft office- uses word, excel and powerpoint files
+     2.SVG - Scalable Vector Garphics
+     3.Web Services- SOAP is used for enterprise data exchange
+     4.RSS/ATOM - used to publish blogs
+     5. DocBook - uses XMl to represent technical documentation
+XML Technologies
+     1.XPath:(eXtensible) XML path language, used to query XML data
+     2.XSLT:Extensible Stylesheet language Tarnsformation, use to convert XML file to someother format or else in XML format only
+     3.Xquery; like XPath more advanced querying language than XPath
+     4.XPointer/XLink: links between and within XML documents
+Note: Xquery, XPointer/XLink are more advance and complex
