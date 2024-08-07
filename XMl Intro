@@ -34,4 +34,36 @@ Two ways we can valid the XML
 
 XMl Namespaces
 -prevent Tags from different languages from conflicting
+<?xml version="1.0" encoding="UTF-8"?> - optional
+-version- version of xml file
+-encoding="UTF-8"- Unicode Transformation Format, 8-bit encoding ASCII-based systems and enables use of all the characters in the Unicode standard.
+-The XML prolog does not have a closing tag! This is not an error. The prolog is not a part of the XML documen
+-XML Tags are Case Sensitive
+Entity References 
+-If you place a character like "<" inside an XML element, it will generate an error because the parser interprets it as the start of a new element.
+-This will generate an XML error:
+   <message>salary < 1000</message>
+-to avoid this error, replace the "<" character with an entity reference:
+   <message>salary &lt; 1000</message>
+-There are 5 pre-defined entity references in XML:
 
+   &lt;	<	less than
+   &gt;	>	greater than
+    &amp;	&	ampersand 
+   &apos;	'	apostrophe
+   &quot;	"	quotation mark
+Only < and & are strictly illegal in XML, but it is a good habit to replace > with &gt; as well.
+- XML does not truncate multiple white-space
+- CRLF- Carriage Return + Line Feed = "\r\n"
+- Windows applications store a new line as: carriage return and line feed (CR+LF).(Use W3 school)
+- Carriage Return- "\r"- It is used to move the cursor to the beginning of the line, effectively "returning" it to the start. 
+- Line Feed - "\n"
+
+XML Naming Rules
+1.XML elements must follow these naming rules:
+2.Element names are case-sensitive
+3.Element names must start with a letter or underscore
+4.Element names cannot start with the letters xml (or XML, or Xml, etc)
+5.Element names can contain letters, digits, hyphens, underscores, and periods
+6.Element names cannot contain spaces
+7.Any name can be used, no words are reserved (except xml).
