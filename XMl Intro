@@ -17,7 +17,8 @@ Xml is foundation of several popular information format
      5. DocBook - uses XMl to represent technical documentation
 XML Technologies
      1.XPath:(eXtensible) XML path language, used to query XML data
-     2.XSLT:Extensible Stylesheet language Tarnsformation, use to convert XML file to someother format or else in XML format only
+     2.XSLT:Extensible Stylesheet language Tarnsformation, use to convert XML file to someother format or else in XML format only.The XML document below, is a document used to transform XML into HTML.
+            The namespace "http://www.w3.org/1999/XSL/Transform" identifies XSLT elements inside an HTML document:
      3.Xquery; like XPath more advanced querying language than XPath
      4.XPointer/XLink: links between and within XML documents
 Note: Xquery, XPointer/XLink are more advance and complex
@@ -67,3 +68,52 @@ XML Naming Rules
 5.Element names can contain letters, digits, hyphens, underscores, and periods
 6.Element names cannot contain spaces
 7.Any name can be used, no words are reserved (except xml).
+
+Conflicts between 2 XML File
+-Name Conflicts
+In XML, element names are defined by the developer. This often results in a conflict when trying to mix XML documents from different XML applications.
+Solving the Name Conflict Using a Prefix
+Name conflicts in XML can easily be avoided using a name prefix.
+This XML carries information about an HTML table, and a piece of furniture:
+<h:table>
+  <h:tr>
+    <h:td>Apples</h:td>
+    <h:td>Bananas</h:td>
+  </h:tr>
+</h:table>
+
+<f:table>
+  <f:name>African Coffee Table</f:name>
+  <f:width>80</f:width>
+  <f:length>120</f:length>
+</f:table>
+In the example above, there will be no conflict because the two <table> elements have different names.
+
+XML Namespaces - The xmlns Attribute
+-When using prefixes in XML, a namespace for the prefix must be defined.
+-The namespace can be defined by an xmlns attribute in the start tag of an element.
+-The namespace declaration has the following syntax. xmlns:prefix="URI".
+-When a namespace is defined for an element, all child elements with the same prefix are associated with the same namespace.
+-Namespaces can also be declared in the XML root element:
+(Refer W3)
+
+<root xmlns:h="http://www.w3.org/TR/html4/"
+xmlns:f="https://www.w3schools.com/furniture">
+<root xmlns:h="http://www.w3.org/TR/html4/"
+xmlns:f="https://www.w3schools.com/furniture">
+
+<h:table>
+  <h:tr>
+    <h:td>Apples</h:td>
+    <h:td>Bananas</h:td>
+  </h:tr>
+</h:table>
+
+<f:table>
+  <f:name>African Coffee Table</f:name>
+  <f:width>80</f:width>
+  <f:length>120</f:length>
+</f:table>
+
+</root>
+
